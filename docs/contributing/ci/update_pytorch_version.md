@@ -46,12 +46,6 @@ to point to the new releases for `torch`, `torchvision`, and `torchaudio`.
     export UV_INDEX_STRATEGY=unsafe-best-match
     ```
 
-    - Or via CLI flag:
-
-    ```bash
-    --index-strategy unsafe-best-match
-    ```
-
 If failures are found in the pull request, raise them as issues on vLLM and
 cc the PyTorch release team to initiate discussion on how to address them.
 

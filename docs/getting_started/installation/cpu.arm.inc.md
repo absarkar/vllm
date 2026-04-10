@@ -53,7 +53,7 @@ LLM inference is a fast-evolving field, and the latest code may contain bug fixe
 To install from nightly index, run:
 
 ```bash
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly/cpu --index-strategy first-index
+uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly/cpu 
 ```
 
 ??? console "pip (there's a caveat)"
@@ -72,7 +72,7 @@ If you want to access the wheels for previous commits (e.g. to bisect the behavi
 
 ```bash
 export VLLM_COMMIT=730bd35378bf2a5b56b6d3a45be28b3092d26519 # use full commit hash from the main branch
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/${VLLM_COMMIT}/cpu --index-strategy first-index
+uv pip install vllm --extra-index-url https://wheels.vllm.ai/${VLLM_COMMIT}/cpu 
 ```
 
 --8<-- [end:pre-built-wheels]

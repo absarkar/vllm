@@ -88,7 +88,6 @@ echo $VLLM_ROCM_VARIANT
 
 uv pip install --pre vllm \
     --extra-index-url https://wheels.vllm.ai/rocm/nightly/${VLLM_ROCM_VARIANT} \
-    --index-strategy unsafe-best-match
 ```
 
 ##### Install specific revisions
@@ -111,7 +110,6 @@ echo $VLLM_VERSION
 
 uv pip install vllm==${VLLM_VERSION} \
   --extra-index-url https://wheels.vllm.ai/rocm/${VLLM_COMMIT}/${VLLM_ROCM_VARIANT} \
-  --index-strategy unsafe-best-match
 ```
 
 !!! warning "`pip` caveat"

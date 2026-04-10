@@ -53,7 +53,7 @@ uv pip install https://github.com/vllm-project/vllm/releases/download/v${VLLM_VE
 To install the wheel built from the latest main branch:
 
 ```bash
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly/cpu --index-strategy first-index --torch-backend cpu
+uv pip install vllm --extra-index-url https://wheels.vllm.ai/nightly/cpu --torch-backend cpu
 ```
 
 #### Install specific revisions
@@ -62,7 +62,7 @@ If you want to access the wheels for previous commits (e.g. to bisect the behavi
 
 ```bash
 export VLLM_COMMIT=730bd35378bf2a5b56b6d3a45be28b3092d26519 # use full commit hash from the main branch
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/${VLLM_COMMIT}/cpu --index-strategy first-index --torch-backend cpu
+uv pip install vllm --extra-index-url https://wheels.vllm.ai/${VLLM_COMMIT}/cpu --torch-backend cpu
 ```
 
 --8<-- [end:pre-built-wheels]
